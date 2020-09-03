@@ -1,0 +1,29 @@
+---
+title: "A GSAP Tutorial"
+subtitle: "Learn how to use GSAP animations in your slides!"
+author: "Maya Gans"
+output:
+  xaringan::moon_reader:
+    css: "style.css"
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    includes:
+      in_header: head.html
+---
+
+<div class="container">
+  <div class="child">
+  <img src = "Rlogo.png" class="R"/>
+  <img src = "gsap.png" class="gsap"/>
+  </div>
+</div>
+
+<script>
+gsap.set(".R, .gsap", {transformOrigin: "50% 50%"});
+gsap.to(".R, .gsap", {duration: 2, rotation: 360, repeat: -1})
+</script>
+
+---
